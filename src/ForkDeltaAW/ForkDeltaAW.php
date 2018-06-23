@@ -14,7 +14,7 @@ class ForkDeltaAW
 
     public function getSymbolData()
     {
-        $full_url = 'https://raw.githubusercontent.com/forkdelta/forkdelta.github.io/master/config/main.json';
+        $full_url = 'https://raw.githubusercontent.com/poa-delta/poa-delta.github.io/master/config/main.json';
         $handle = curl_init($full_url);
         curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
         $result = curl_exec($handle);
